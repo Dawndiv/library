@@ -1,8 +1,9 @@
-﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>福州市数字图书馆系统</title>
 <style type="text/css">
@@ -56,13 +57,12 @@ $(document).ready(function() {
     });
 });
 </script>
-
 </head>
 
 <body>
 <div id="div1">
 	<h3>添加图书</h3>
-	<form name="form1" action="addBook.do" method="post">
+	<form id="form1" name="form1" action="addBook.do" method="post">
     	<table id="table1">
         	<tr>
             	<td width="15%">书籍编号：</td>
@@ -74,7 +74,7 @@ $(document).ready(function() {
             	<td>类别：</td>
                 <td>
                 	<select id="bookType" name="book.type.id" class="item-select">
-                    	<option value="0">不限</option>
+                    	<option value="0">---请选择---</option>
                     	<c:forEach items="${typeList }" var="type">
                         <option value="${type.id }">${type.name }</option>
                         </c:forEach>

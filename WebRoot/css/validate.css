@@ -1,0 +1,43 @@
+.item-text {
+    float: left;
+    width: 100px;
+    height: 20px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.item-select {
+    float: left;
+    width: 102px;
+    height: 25px;
+    border: 1px solid #ccc;
+}
+
+input.error {
+    border: 1px solid #E6594E;
+}
+
+input.highlight {
+    border: 1px solid #7abd54;
+}
+
+label.error, label.tip {
+    float: left;
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+    padding-left: 20px;
+    color: red;
+    background: url('../images/error.png') no-repeat left center;
+}
+
+label.tip {
+    color: #aaa;
+    background: url('../images/tip.png') no-repeat left center;
+}
+
+label.valid {
+    background: url('../images/valid.png') no-repeat left center;
+    width: 32px;
+}
