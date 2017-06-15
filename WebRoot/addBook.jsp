@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -81,11 +81,11 @@ $(document).ready(function() {
                     </select>
                 </td>
             	<td>作者：</td>
-                <td><input id="author" name="book.author " type="text" class="item-text" /></td>
+                <td><input id="author" name="book.author" type="text" class="item-text" /></td>
             </tr>
         	<tr>
             	<td>价格：</td>
-                <td><input id="price" name="book. price" type="text" class="item-text" /></td>
+                <td><input id="price" name="book.price" type="text" class="item-text" /></td>
             	<td>数量：</td>
                 <td><input id="amount" name="book.amount" type="text" class="item-text" /></td>
             </tr>
